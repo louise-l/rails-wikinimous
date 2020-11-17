@@ -1,0 +1,10 @@
+<h1>Description of each article</h1>
+<h2><%= @article[:title] %></h2>
+<p><%= @article[:content] %></p>
+
+<p> <%= link_to "Edit the article", edit_article_path(@article) %> </p>
+<p> <%= link_to "Delete the article", article_path(@article), method: :delete %> </p>
+
+<%= link_to "Back to articles", articles_path  %>
+
+<% console %>
